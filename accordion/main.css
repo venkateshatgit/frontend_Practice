@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background-color: rgb(26, 23, 62);
+    font-family: Arial;
+    overflow-y: hidden;
+}
+
+.main{
+    margin: 100px auto;
+    width: 600px;
+}
+
+.main ul{
+    list-style: none;
+}
+
+.main ul li{
+    background-color: #fff;
+    padding: 20px 15px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.main ul li label{
+    font-size: 20px;
+    font-weight: 700px;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main ul li label span{
+    transform: rotate(90deg);
+    font-size: 15px;
+    margin: 0 10px; 
+}
+
+
+
+
+
+
+.main ul li label +  input[type="radio"]{
+    display: none;
+}
+
+.main ul li .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s;
+}
+
+#accordion label + input[type="radio"]:checked + .content  {
+    max-height: 400px;
+} 
+
+
+
+
+
+
+
