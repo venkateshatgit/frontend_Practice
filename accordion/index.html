@@ -57,5 +57,23 @@
             </li>
         </ul>
     </div>
+
+    <script>
+        let acc = Array.from(document.getElementsByTagName('li'));
+        for(let i=0; i<acc.length; ++i){
+            acc[i].addEventListener('click', function(){
+                let selected="";
+                if(i==0)
+                    selected="first";
+                else if(i==1)
+                    selected="second";
+                else
+                    selected="third";
+
+                let value = document.querySelector('#'+selected).checked;
+                document.querySelector('#'+selected).checked = !value
+            });
+        }
+    </script>
 </body>
 </html>

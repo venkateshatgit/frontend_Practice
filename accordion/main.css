@@ -43,7 +43,7 @@ body{
 
 
 
-.main ul li label +  input[type="radio"]{
+input[type="radio"]{
     display: none;
 }
 
@@ -55,7 +55,7 @@ body{
     transition: max-height 0.7s;
 }
 
-#accordion label + input[type="radio"]:checked + .content  {
+input[type="radio"]:checked + .content  {
     max-height: 400px;
 } 
 
